@@ -1,0 +1,16 @@
+Tox: sort of an automation tool for python...  Often for setting up and running testing under many different virtualenvs etc.
+You can set up "test matrices" which can allow you to sort of cartesian join a bunch of different testing parameters:
+
+envlist = py{36,37,38}-django{22,30}-{sqlite,mysql}
+
+...creates 12 diferent testing environments.
+And can run pytest, black, flake8, etc.
+
+
+pre-commit.com - a tool to automate the creation of pre-commit hooks for git or others.
+install with pip or pipx
+Add a configuration defining the tasks to run etc, then add the hooks with a command.
+
+pre-commit vs vs code config:
+-pre-commit uses standardized settings shared between the whole team
+-pre-commit's config file is kept in the git repo for the project - so everyone should be using the same thing (once set up).
