@@ -12,8 +12,6 @@ def add(left, right):
     :return: sum of left and right operands
     """
     return left + right
-
-
 def subtract(left, right):
     """Subtract two numbers.
 
@@ -38,8 +36,6 @@ def multiply(left, right):
     :return: product of multiplication
     """
     return left * right
-
-
 def divide(left, right):
     """Divide two numbers."""
     return left // right
