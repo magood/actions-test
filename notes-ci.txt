@@ -14,3 +14,11 @@ Add a configuration defining the tasks to run etc, then add the hooks with a com
 pre-commit vs vs code config:
 -pre-commit uses standardized settings shared between the whole team
 -pre-commit's config file is kept in the git repo for the project - so everyone should be using the same thing (once set up).
+
+Both tox and pre-commit run on your own computer - and rely on you setting them up.
+You can run checks on the server - github/gitlab, etc...  Before PRs are accepted.
+-GitHub Actions or GitLab CI, common free tools.
+
+GitHub Actions - built into GitHub.
+Create a configuration file with a few settings.  Name, when to run ("push"), jobs to run etc...
+Jobs run in containers - so specify which image to use ("ubuntu-latest")
